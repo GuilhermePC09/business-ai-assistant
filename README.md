@@ -255,7 +255,32 @@ pip install -r requirements.txt
 - **No Conversation Memory**: The assistant does not remember previous messages in the conversation. Each message is processed independently.
 - **Single Task Per Message**: The assistant can only handle one task per message. If you need multiple calculations or operations, please send them as separate messages.
 
-## 📄 License
+## � Future Improvements
+
+Given more time, the following enhancements would be implemented:
+
+### Advanced Tools
+- **CSV Analysis Tool**: Complex data analysis capabilities for processing and extracting insights from CSV files
+- **Web News Search**: Integration with news APIs to search and retrieve relevant business news and market updates
+- **Additional Business Tools**: More specialized tools for financial modeling, competitor analysis, and market research
+
+### RAG Architecture
+- Implementation of a **Retrieval-Augmented Generation (RAG)** architecture to enable:
+  - Ingestion and indexing of custom documents (PDFs, Word docs, etc.)
+  - Context-aware responses based on proprietary company data
+  - Vector database integration for semantic search capabilities
+
+### Code Quality & Testing
+- **Robust Error Handling**: Enhanced validation and error handling for all tool functions
+- **Unit Tests**: Comprehensive unit test suite to validate individual function behavior
+- **Integration Tests**: End-to-end testing to ensure proper tool orchestration and agent behavior
+- **LLM Evaluation**: Integration with frameworks like **DeepEval** to:
+  - Evaluate response quality and relevance
+  - Monitor hallucination rates
+  - Track performance metrics over time
+  - Implement automated quality assurance pipelines
+
+## �📄 License
 
 This project is for demonstration and educational purposes.
 
