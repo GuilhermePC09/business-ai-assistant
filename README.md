@@ -30,10 +30,10 @@ cd business-ai-assistant
 ### 2. Create Virtual Environment
 
 ```bash
-python -m venv venv
-source venv-artefact/bin/activate  # On macOS/Linux
+python3 -m venv venv
+source venv/bin/activate  # On macOS/Linux
 # or
-.\venv-artefact\Scripts\activate  # On Windows
+.\venv\Scripts\activate  # On Windows
 ```
 
 ### 3. Install Dependencies
@@ -249,6 +249,11 @@ Ensure all dependencies are installed:
 ```bash
 pip install -r requirements.txt
 ```
+
+## ⚠️ Known Limitations
+
+- **No Conversation Memory**: The assistant does not remember previous messages in the conversation. Each message is processed independently.
+- **Single Task Per Message**: The assistant can only handle one task per message. If you need multiple calculations or operations, please send them as separate messages.
 
 ## 📄 License
 
